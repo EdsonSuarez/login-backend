@@ -1,5 +1,5 @@
 # Conexion servidor Login-backend
-### Instalacion de npm
+### Inicializar npm
 ```
 npm init -y
 ```
