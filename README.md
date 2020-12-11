@@ -46,3 +46,13 @@ es para la estructura de los json (express tambien tiene uno)
 ```
 $ npm install body-parser
 ```
+
+### jsonwebtoken
+```
+npm install jsonwebtoken
+```
+
+### para no se que 
+```
+npm i cors
+```

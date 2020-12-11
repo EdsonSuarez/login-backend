@@ -2,8 +2,10 @@ const express = require('express');
 const morgan = require('morgan');
 const apiRouter = require('./routes');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 //instancia de express en mi app
 const app = express();
+app.use(cors());
 
 //middleware morgan para detectar peticiones
 app.use(morgan('dev'));
