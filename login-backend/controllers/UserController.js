@@ -9,7 +9,7 @@ exports.login = async(req, res, next) =>{
             if(passwordisValid){
                 const token = jwt.sign({
                     id: user.id,
-                    name: user.username,
+                    name: user.name,
                     email: user.email,
                     rol: user.rol
                 }, 'config.secret', {
@@ -18,7 +18,7 @@ exports.login = async(req, res, next) =>{
                 );
                 res.status(200).send({
                     auth: true, 
-                    tokenReturn: token,
+                    accessToken : token,
                     user: user
                 });
             } else{
